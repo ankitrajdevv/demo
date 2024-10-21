@@ -1,4 +1,4 @@
-/* eslint-disable no-restricted-globals */
+// serviceworker.js
 
 const CACHE_NAME = "my-cache-v1";
 const urlsToCache = [
@@ -6,7 +6,6 @@ const urlsToCache = [
   "/index.html",
   "/static/js/bundle.js", // Adjust paths according to your build
   "/static/css/main.css",
-  "/static/js/main.js",
   "/logo192.png" // Add other assets like images, fonts, etc.
 ];
 
@@ -35,7 +34,7 @@ self.addEventListener('fetch', (event) => {
         return fetch(event.request).catch(() => {
           // Optionally return fallback page if offline
           if (event.request.mode === 'navigate') {
-            return caches.match('/');
+            return caches.match('/'); // Make sure this matches your homepage
           }
         });
       })
