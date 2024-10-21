@@ -46,6 +46,7 @@ function App() {
           <li>Code splitting "dynamic import"</li>
           <li>Lazy Load , Suspense</li>
           <li>Progressive web app , Offline availability</li>
+          <li>You can install this web app  and can use it offline also</li>
         </ul>
       <div className="content">
         
