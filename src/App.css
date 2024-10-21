@@ -1,0 +1,38 @@
+/* Styles for the navbar */
+.navbar {
+  background-color: #021f3e; /* Blue background */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+ul{
+  font-size: 20px;
+}
+.navbar ul li:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Centering the content both vertically and horizontally */
+.content {
+  display: flex;
+  justify-content:center;
+  align-items:end;
+  height: 60vh; /* Full viewport height */
+  text-align: center;
+  font-size: 24px;
+}
